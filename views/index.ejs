@@ -1,0 +1,20 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+<main class="container">
+
+
+  <% if (title == 'Home') { %>
+    <%- include partials/home.ejs %>
+  <% } else if (title == 'About Me') { %>
+    <%- include partials/about.ejs %>
+  <% } else if (title == 'Services') { %>
+    <%- include partials/services.ejs %>
+  <% } else if (title == 'Contact Me') { %>
+    <%- include partials/contact.ejs %>
+    <% } else if (title == 'Projects') { %>
+    <%- include partials/projects.ejs %>
+  <% } %>
+
+</main>
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
